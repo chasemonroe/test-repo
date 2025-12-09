@@ -410,13 +410,12 @@ p {
 
     /* Left image */
     .left-img {
-        /* left: 0; */
-        width: 40%;
+        left: 0;
     }
 
     /* Right image */
     .right-img {
-        /* right: 0; */
+        right: 0;
     }
 
     /* Ensure form content stays on top */
