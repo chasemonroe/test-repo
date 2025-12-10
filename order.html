@@ -2,123 +2,136 @@
 <html lang="en">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Place an Order</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom css -->
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
 
 
-    <body>
+<body>
 
-        <!-- Navbar -->
-        <header>
-            <nav class="header-navbar">
-                <ul>
+    <!-- Navbar -->
+    <header>
+        <nav class="header-navbar">
+            <div class="nav-inner">
+                <!-- Optional: brand / logo text (can remove if you don't want it) -->
+                <img src="./assets/img/minishaka2.png" class="hamburger-menu-local" alt="Logo" class="nav-logo">
+
+                <!-- Hamburger button -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="order.html">Order</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <!-- Form -->
-        <main class="py-5">
+    <!-- Form -->
+    <main class="py-5">
 
-           <section class="order-form-section position-relative py-5">
+        <section class="order-form-section position-relative py-5">
 
-                    <!-- Left Image -->
-                    <img src="./assets/img/tiki_Left.png" alt="Left decor" class="side-img left-img d-none d-lg-block">
+            <!-- Left Image -->
+            <img src="./assets/img/tiki_Left.png" alt="Left decor" class="side-img left-img d-none d-lg-block">
 
-                    <!-- Right Image -->
-                    <img src="./assets/img/tiki_Right.png" alt="Right decor" class="side-img right-img d-none d-lg-block">
+            <!-- Right Image -->
+            <img src="./assets/img/tiki_Right.png" alt="Right decor" class="side-img right-img d-none d-lg-block">
 
-                <div class="container">
-                    <h1 class="text-center mb-4">Place Your Custom Order</h1>
+            <div class="container">
+                <h1 class="text-center mb-4">Place Your Custom Order</h1>
 
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-6">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
 
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your full name">
-                                </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name">
+                            </div>
 
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="you@email.com">
-                                </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@email.com">
+                            </div>
 
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="(###) ###-####">
-                                </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="(###) ###-####">
+                            </div>
 
-                                <div class="mb-3">
-                                    <label for="details" class="form-label">Order Details</label>
-                                    <textarea class="form-control" id="details" rows="6" placeholder="Describe your custom order..."></textarea>
-                                </div>
-                                
-                                <button type="submit" class="btn w-100">Submit Order</button>
-                            </form>
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Order Details</label>
+                                <textarea class="form-control" id="details" rows="6"
+                                    placeholder="Describe your custom order..."></textarea>
+                            </div>
 
-                        </div>
+                            <button type="submit" class="btn w-100">Submit Order</button>
+                        </form>
+
                     </div>
-                    
                 </div>
 
-            </section>
+            </div>
 
-        </main>
+        </section>
 
-        <!-- Footer -->
-        <!-- FOOTER -->
-        <footer class="footer-section py-5 bg-dark text-light">
-            <div class="container">
+    </main>
+
+    <!-- Footer -->
+    <!-- FOOTER -->
+    <footer class="footer-section py-5 bg-dark text-light">
+        <div class="container">
 
             <div class="row">
 
                 <!-- Column 1 -->
                 <div class="col-md-4 mb-4">
-                <h5 class="fw-bold mb-3">Ainokea Customs</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Meet the Team</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
-                </ul>
+                    <h5 class="fw-bold mb-3">Ainokea Customs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Meet the Team</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                    </ul>
                 </div>
 
                 <!-- Column 2 -->
                 <div class="col-md-4 mb-4">
-                <h5 class="fw-bold mb-3">Resources</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Events</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Partnerships</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Downloads</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Press Kit</a></li>
-                </ul>
+                    <h5 class="fw-bold mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Events</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Partnerships</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Downloads</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Press Kit</a></li>
+                    </ul>
                 </div>
 
                 <!-- Column 3 -->
                 <div class="col-md-4 mb-4">
-                <h5 class="fw-bold mb-3">Support</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Order Help</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Shipping Info</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Warranty</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Policies</a></li>
-                </ul>
+                    <h5 class="fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Order Help</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping Info</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Warranty</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Policies</a></li>
+                    </ul>
                 </div>
 
             </div>
@@ -128,16 +141,12 @@
 
                 <!-- Left Image -->
                 <div class="col-6 text-start">
-                <img src="assets/img/Socials.png" 
-                    alt="Footer Left Image"
-                    style="max-width: 150px; opacity: 0.8;">
+                    <img src="assets/img/Socials.png" alt="Footer Left Image" style="max-width: 150px; opacity: 0.8;">
                 </div>
 
                 <!-- Right Image -->
                 <div class="col-6 text-end">
-                <img src="assets/img/shaka.png"
-                    alt="Footer Right Image"
-                    style="max-width: 120px; opacity: 0.8;">
+                    <img src="assets/img/shaka.png" alt="Footer Right Image" style="max-width: 120px; opacity: 0.8;">
                 </div>
 
             </div>
@@ -146,12 +155,41 @@
                 <small>&copy;2025 Mason's Final Project Part 1</small>
             </div>
 
-            </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav = document.querySelector('.header-navbar');
+            const toggle = document.querySelector('.nav-toggle');
+            const links = document.querySelectorAll('.nav-links a');
 
-    </body>
+            if (!nav || !toggle) return;
+
+            toggle.addEventListener('click', function () {
+                const isOpen = nav.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            // Close the menu when you tap a link (very helpful on mobile)
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Optional: close menu on resize to desktop
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && nav.classList.contains('is-open')) {
+                    nav.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
 
 </html>

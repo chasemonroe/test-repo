@@ -2,98 +2,128 @@
 <html lang="en">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Ainokea Gallery</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ainokea Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 
 
-    <body>
+<body>
 
-        <!-- Navbar -->
-        <header>
-            <nav class="header-navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="order.html">Order</a></li>
-                </ul>
-            </nav>
-        </header>
+  <!--Header-->
+  <header>
+    <nav class="header-navbar">
+      <div class="nav-inner">
+        <!-- Optional: brand / logo text (can remove if you don't want it) -->
+        <img src="./assets/img/minishaka2.png" class="hamburger-menu-local" alt="Logo" class="nav-logo">
 
-        <div class="main-gradient">
-            <main>
-                <section id="pinstriping" class="gallery-section py-5">
-                    
-                    <div class="container">
-                        <h1 class="text-center mb-4 gallery-title">"Scars & Stripes"</h1>
-                            <div class="row g-4">
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe1.jpg" alt="Photo 1" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe2.jpg" alt="Photo 2" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe3.jpg" alt="Photo 3" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe4.jpg" alt="Photo 4" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe5.jpg" alt="Photo 5" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe6.jpg" alt="Photo 6" class="gallery-img"></div>
-                            </div>
-                    </div>
+        <!-- Hamburger button -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-                    <div class="text-center mt-4">
-                        <a href="order.html" class="btn">Order Now</a>
-                    </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-                </section>
+  <div class="main-gradient">
+    <main>
+      <section id="pinstriping" class="gallery-section py-5">
 
-                <section id="engraving" class="gallery-section py-5">
-
-                    <div class="container">
-                        <h1 class="text-center mb-4">Engraving Worth the Envy</h1>
-                            <div class="row g-4">
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave1.jpg" alt="Photo 7" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave2.jpg" alt="Photo 8" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave3.jpg" alt="Photo 9" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave4.jpg" alt="Photo 10" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave5.jpg" alt="Photo 11" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave6.jpg" alt="Photo 12" class="gallery-img"></div>
-                            </div>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <a href="order.html" class="btn">Order Now</a>
-                    </div>
-
-                </section>
-
-                <section id="leatherwork" class="gallery-section py-5">
-
-                    <div class="container">
-                        <h1 class="text-center mb-4">Lost Art of Leatherwork</h1>
-                            <div class="row g-4">
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork1.jpg" alt="Photo 13" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork2.jpg" alt="Photo 14" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork3.jpg" alt="Photo 15" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork4.jpg" alt="Photo 16" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork5.jpg" alt="Photo 17" class="gallery-img"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork6.jpg" alt="Photo 18" class="gallery-img"></div>
-                            </div>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <a href="order.html" class="btn">Order Now</a>
-                    </div>          
-
-                </section>
-
-            </main>
+        <div class="container">
+          <h1 class="text-center mb-4 gallery-title">"Scars & Stripes"</h1>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe1.jpg" alt="Photo 1"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe2.jpg" alt="Photo 2"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe3.jpg" alt="Photo 3"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe4.jpg" alt="Photo 4"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe5.jpg" alt="Photo 5"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/pinstripe6.jpg" alt="Photo 6"
+                class="gallery-img"></div>
+          </div>
         </div>
 
-        <!-- Footer -->
+        <div class="text-center mt-4">
+          <a href="order.html" class="btn">Order Now</a>
+        </div>
+
+      </section>
+
+      <section id="engraving" class="gallery-section py-5">
+
+        <div class="container">
+          <h1 class="text-center mb-4">Engraving Worth the Envy</h1>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave1.jpg" alt="Photo 7"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave2.jpg" alt="Photo 8"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave3.jpg" alt="Photo 9"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave4.jpg" alt="Photo 10"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave5.jpg" alt="Photo 11"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/engrave6.jpg" alt="Photo 12"
+                class="gallery-img"></div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="order.html" class="btn">Order Now</a>
+        </div>
+
+      </section>
+
+      <section id="leatherwork" class="gallery-section py-5">
+
+        <div class="container">
+          <h1 class="text-center mb-4">Lost Art of Leatherwork</h1>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork1.jpg" alt="Photo 13"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork2.jpg" alt="Photo 14"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork3.jpg" alt="Photo 15"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork4.jpg" alt="Photo 16"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork5.jpg" alt="Photo 17"
+                class="gallery-img"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img src="./assets/img/leatherwork6.jpg" alt="Photo 18"
+                class="gallery-img"></div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="order.html" class="btn">Order Now</a>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
   <footer class="footer-section py-5 bg-dark text-light">
     <div class="container">
 
@@ -142,16 +172,12 @@
 
         <!-- Left Image -->
         <div class="col-6 text-start">
-          <img src="assets/img/Socials.png" 
-              alt="Footer Left Image"
-              style="max-width: 150px; opacity: 0.8;">
+          <img src="assets/img/Socials.png" alt="Footer Left Image" style="max-width: 150px; opacity: 0.8;">
         </div>
 
         <!-- Right Image -->
         <div class="col-6 text-end">
-          <img src="assets/img/shaka.png"
-              alt="Footer Right Image"
-              style="max-width: 120px; opacity: 0.8;">
+          <img src="assets/img/shaka.png" alt="Footer Right Image" style="max-width: 120px; opacity: 0.8;">
         </div>
 
       </div>
@@ -164,10 +190,39 @@
   </footer>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-  </body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const nav = document.querySelector('.header-navbar');
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelectorAll('.nav-links a');
+
+      if (!nav || !toggle) return;
+
+      toggle.addEventListener('click', function () {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      // Close the menu when you tap a link (very helpful on mobile)
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Optional: close menu on resize to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && nav.classList.contains('is-open')) {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
 
 
 </html>
