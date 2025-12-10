@@ -285,6 +285,10 @@ p {
     width: 15%;
     height: 15%;
   }
+
+  .title-content {
+    margin: 3rem 0 !important;
+  }
 }
 
 /**/
@@ -738,10 +742,7 @@ p {
         display: none !important;
       }
     }
-    
-.title-content {
-  margin: 3rem 0;
-}
+  
 
 /* ===== Custom Gallery Carousel ===== */
 
