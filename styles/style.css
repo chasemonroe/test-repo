@@ -217,7 +217,6 @@ p {
   background: var(--light-color);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 /* Hidden on larger screens */
 .hamburger-menu-local {
   display: none;
@@ -740,6 +739,131 @@ p {
       }
     }
     
+.title-content {
+  margin: 3rem 0;
+}
 
+/* ===== Custom Gallery Carousel ===== */
 
+.custom-carousel {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
+}
 
+.cc-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cc-image-wrapper {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cc-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Arrows */
+.cc-arrow {
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cc-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Dots */
+.cc-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cc-dot.is-active {
+  transform: scale(1.4);
+  background: #f8f9fa;
+}
+
+/* Selected info panel under carousel */
+.cc-selected-panel {
+  margin-top: 1rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+.cc-selected-caption {
+  font-weight: 500;
+}
+
+.cc-selected-index {
+  opacity: 0.75;
+  font-size: 0.85rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .custom-carousel {
+    padding: 1rem;
+  }
+
+  .cc-main {
+    gap: 0.5rem;
+  }
+
+  .cc-arrow {
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 1.1rem;
+  }
+
+  .cc-selected-panel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
